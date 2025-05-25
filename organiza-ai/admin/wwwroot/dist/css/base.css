@@ -1,5 +1,5 @@
 ﻿.navbar {
-    margin-left: -20px !important;
+    margin-left: 0px !important;
     --tblr-navbar-padding-x: 0;
     --tblr-navbar-padding-y: 0.25rem;
     --tblr-navbar-color: var(--tblr-secondary);

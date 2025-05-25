@@ -2,8 +2,19 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    ViewData["TituloMapa"] = "Dashboard";
+    ViewData["MapaComBotao"] = false;
+
+    ViewData["MapaSite"] = new List<(string Texto, string? Url)>
+    {
+      ("Página Inicial", "/")
+      // ("Atributos", null)
+    };
 }
-    <div class="col-sm-12 col-lg-6">
+
+@await Html.PartialAsync("_PartialMapa")
+
+<div class="col-sm-12 col-lg-6">
             <div class="card">
               <div class="card-body">
                 <div class="row gy-3">

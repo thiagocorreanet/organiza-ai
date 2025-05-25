@@ -1,12 +1,5 @@
 ﻿@{
-  ViewData["TituloMapa"] = "Dashboard";
-  ViewData["MapaComBotao"] = false;
 
-  ViewData["MapaSite"] = new List<(string Texto, string? Url)>
-  {
-    ("Página Inicial", "/")
-    // ("Atributos", null)
-  };
 }
 
 <!doctype html>
@@ -51,7 +44,7 @@
   <!-- END NAVBAR  -->
   <div class="page-wrapper">
     <!-- BEGIN PAGE HEADER -->
-    @await Html.PartialAsync("_PartialMapa")
+   
     
     <!-- BEGIN PAGE BODY -->
     <div class="page-body">
