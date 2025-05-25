@@ -1,0 +1,7 @@
+﻿services:
+  admin:
+    image: admin
+    build:
+      context: .
+      dockerfile: admin/Dockerfile
+
